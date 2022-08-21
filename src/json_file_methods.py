@@ -6,7 +6,7 @@ class JsonFileMethods:
 
     def get_json_file_data(self):
         root_path = os.path.dirname(os.path.dirname(__file__))
-        path = os.path.join(root_path, "src\\Team.json")
+        path = os.path.join(root_path, "src\\team_rcb.json")
         with open(path, 'r') as openfile:
             json_object = json.load(openfile)
         return json_object
